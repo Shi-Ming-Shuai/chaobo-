@@ -1,0 +1,26 @@
+/* 内容列表 */
+.list {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.list-item {
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+  width: 120rpx;
+}
+.list-item image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.list-item text {
+  display: block;
+  /* 单行文本超出隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 24rpx;
+}

@@ -1,0 +1,7 @@
+<!-- 分类内容组件 列表 -->
+<view class="list">
+  <view wx:for="{{contentList}}" wx:key="img_id" class="list-item" data-id="{{item.img_id}}" bind:tap="toDetail">
+    <image src="{{item.img_url}}" lazy-load="{{true}}"></image>
+    <text>{{item.img_name}}</text>
+  </view>
+</view>

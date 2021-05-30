@@ -1,0 +1,45 @@
+/* 顶部导航 */
+.van-nav-bar {
+  padding-top: 0 !important;
+  background-color: #e56b14 !important;
+}
+/* vant 外部样式类 */
+.nav-bar-title {
+  font-size: 32rpx !important;
+  color: #fff !important;
+}
+/* tab标签 */
+.van-tabs__wrap {
+  margin-bottom: 10rpx !important;
+}
+/* 灯饰分类 */
+.category-ds {
+  display: flex;
+  height: calc(100vh - 92rpx - 100rpx);
+}
+.ds-scroll {
+  width: 200rpx;
+  height: 100%;
+}
+.ds-scroll .scroll-item {
+  width: 200rpx;
+  height: 100rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #f7f7f7;
+  /* 单行文本超出隐藏 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ds-content {
+  flex: 1;
+}
+
+/* 活跃样式 */
+.active {
+  background-color: #fff !important;
+  color: #ff5858;
+  font-weight:bold;
+}

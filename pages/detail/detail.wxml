@@ -1,0 +1,20 @@
+<!-- 商品详情页 -->
+<view class="detail">
+  <!-- 顶部导航 -->
+  <van-nav-bar title="商品详情" />
+  <!-- 商品信息 -->
+  <view class="product">
+    <!-- 商品图 -->
+    <view class="product-img" bind:tap="preview">
+      <image class="" src="{{productData.img_url}}"></image>
+    </view>
+    <view class="product-info">
+      <view class="title">
+        <text user-select class="name">名称：{{productData.img_name}}</text>
+        <van-button open-type="share" class="send-btn" size="small" icon="share-o">转发</van-button>
+      </view>
+      <text class="send">咨询：转发给卖家咨询详细信息(微信先加好友)</text>
+      <text class="send">点击图片查看大图模式</text>
+    </view>
+  </view>
+</view>

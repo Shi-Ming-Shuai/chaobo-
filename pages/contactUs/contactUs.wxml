@@ -1,0 +1,49 @@
+<!-- 联系我们 -->
+<view class="contact-us">
+  <!-- 头部图片 -->
+  <view class="head">
+    <image src="http://p3.qhimg.com/d/inn/c1b575b5/banner.jpg" />
+  </view>
+  <!-- 服务支持 -->
+  <view class="fuwu">
+    <view class="title">
+      <text>服务支持</text>
+    </view>
+    <view class="content">
+      <view>免费上门安装</view>
+      <view>免费售后</view>
+      <view></view>
+    </view>
+  </view>
+  <!-- 为什么选择超博 -->
+  <view class="weishenme">选择实体店，售后更有保证</view>
+  <!-- 联系方式 -->
+  <view class="lianxi">
+    <view class="title">联系我们</view>
+    <view>
+      手机1:
+      <text user-select style="margin-right:20rpx">15175228544</text>
+      <van-button round size="mini" bind:tap="callPhone1" type="primary">立即拨打</van-button>
+    </view>
+    <view>
+      手机2:
+      <text user-select style="margin-right:20rpx">18431265175</text>
+      <van-button round size="mini" bind:tap="callPhone2" type="primary">立即拨打</van-button>
+    </view>
+    <view>
+      微信:
+      <text user-select>Cong0722Han</text>
+      (请备注:"买灯咨询")
+    </view>
+    <view>
+      微信:
+      <text user-select>tudou132519</text>
+      (请备注:"买灯咨询")
+    </view>
+    <view>长按复制 微信号 !!!</view>
+  </view>
+  <!-- 电话 -->
+  <view class="call-phone" bind:tap="call">
+    <van-icon name="phone" />
+  </view>
+</view>

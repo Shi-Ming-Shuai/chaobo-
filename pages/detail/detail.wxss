@@ -1,0 +1,34 @@
+.detail .van-nav-bar {
+  padding-top: 0 !important;
+  background-color: #e56b14;
+}
+.van-nav-bar__title,
+.van-nav-bar__text {
+  color: #fff !important;
+}
+
+/* 商品信息 */
+.product-img {
+  width: 750rpx;
+  height: 750rpx;
+}
+.product-img image{
+  width: 100%;
+  height: 100%;
+}
+.product-info {
+  padding: 16rpx;
+}
+.product-info .name {
+  font-size: 32rpx;
+}
+.product-info .title {
+  display: flex;
+  justify-content: space-between;
+}
+.send {
+  display: block;
+  margin-top: 20rpx;
+  text-align: right;
+  font-size: 24rpx;
+}

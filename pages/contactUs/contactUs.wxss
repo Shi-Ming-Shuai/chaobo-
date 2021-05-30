@@ -1,0 +1,35 @@
+
+.head{
+ padding: 50rpx;
+}
+.head image{
+  width: 100%;
+  height: 200rpx;
+}
+/* 服务支持 */
+
+.content{
+  padding: 50rpx;
+}
+.content view{
+  margin-top: 20rpx;
+}
+.title{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+/* 联系我们 */
+.lianxi{
+  margin-top: 40rpx;
+}
+.lianxi .title{
+  margin: 0;
+}
+.lianxi view{
+  margin: 20rpx;
+}
+.lianxi view text{
+  padding: 0 10rpx;
+  color: #fff;
+  background-color: red;
+}

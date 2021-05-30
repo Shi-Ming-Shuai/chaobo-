@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cate-content":"/components/cate-content/cate-content"
+  }
+}

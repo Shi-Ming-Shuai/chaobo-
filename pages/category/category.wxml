@@ -1,0 +1,84 @@
+<!-- 分类页面 -->
+<view id="category">
+  <!-- 导航 -->
+  <van-nav-bar title-class="nav-bar-title" title="商品分类" />
+  <!-- 标签页 -->
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="灯饰">
+      <view class="category-ds">
+        <!-- 分类区域 -->
+        <scroll-view class="ds-scroll" scroll-y>
+          <view wx:for="{{cateData}}" data-index="{{index}}" wx:key="id" class="scroll-item {{currentActive==index?'active':''}}" bind:tap="switchCate">
+            <text>{{item.name}}</text>
+          </view>
+        </scroll-view>
+        <!-- 内容区域 -->
+        <view class="ds-content">
+          <!-- 使用组件 -->
+          <cate-content currentCate="{{currentActive}}" contentList="{{contentListProps}}" />
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="厨卫">
+      <view class="category-ds">
+        <!-- 分类区域 -->
+        <scroll-view class="ds-scroll" scroll-y>
+          <view class="scroll-item">
+            <text>厨卫厨卫厨卫厨卫</text>
+          </view>
+          <view class="scroll-item">
+            <text>厨卫</text>
+          </view>
+          <view class="scroll-item">
+            <text>油烟机</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名4</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名5</text>
+          </view>
+          <view class="scroll-item">
+            <text>吸顶灯</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名2</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名3</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名4</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名5</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名1</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名2</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名3</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名4</text>
+          </view>
+          <view class="scroll-item">
+            <text>类名5</text>
+          </view>
+        </scroll-view>
+        <!-- 内容区域 -->
+        <view class="ds-content">
+          <!-- 使用组件 -->
+          <cate-content />
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+  <!-- 电话按钮 -->
+  <view class="call-phone" bind:tap="call">
+    <van-icon name="phone" />
+  </view>
+</view>

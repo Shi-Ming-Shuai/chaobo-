@@ -1,0 +1,98 @@
+<view class="home">
+  <!-- 轮播图 -->
+  <swiper class="nav-swiper" indicator-active-color="#fff" circular indicator-dots autoplay interval="{{2000}}" duration="{{800}}">
+    <block wx:for="{{banners}}" wx:key="index">
+      <swiper-item>
+        <image class="swiper-image" src="{{item.url}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 分类导航 -->
+  <view class="nav-category">
+    <view class="cate-item">
+      <image src="/static/images/nvsheng.jpg"></image>
+      <text>现代简约灯</text>
+    </view>
+    <view class="cate-item">
+      <image src="/static/images/nvsheng.jpg"></image>
+      <text>卧室</text>
+    </view>
+    <view class="cate-item">
+      <image src="/static/images/nvsheng.jpg"></image>
+      <text>厨房灯</text>
+    </view>
+    <view class="cate-item">
+      <image src="/static/images/nvsheng.jpg"></image>
+      <text>厨卫</text>
+    </view>
+  </view>
+  <!-- 推荐 -->
+  <view class="recommend">
+    <view class="head">
+      <text class="shu"></text>
+      <text class="title">热卖专区</text>
+    </view>
+    <view class="rec-list">
+      <view class="rec-list-item">
+        <view class="goods-img">
+          <image class="" src="/static/images/nvsheng.jpg" lazy-load="{{true}}"></image>
+        </view>
+        <view class="goods-name">
+          <text>商品名称</text>
+        </view>
+      </view>
+      <view class="rec-list-item">
+        <view class="goods-img">
+          <image class="" src="/static/images/nvsheng.jpg" lazy-load="{{true}}"></image>
+        </view>
+        <view class="goods-name">
+          <text>商品名称</text>
+        </view>
+      </view>
+      <view class="rec-list-item">
+        <view class="goods-img">
+          <image class="" src="/static/images/nvsheng.jpg" lazy-load="{{true}}"></image>
+        </view>
+        <view class="goods-name">
+          <text>商品名称</text>
+        </view>
+      </view>
+      <view class="rec-list-item">
+        <view class="goods-img">
+          <image class="" src="/static/images/nvsheng.jpg" lazy-load="{{true}}"></image>
+        </view>
+        <view class="goods-name">
+          <text>商品名称</text>
+        </view>
+      </view>
+      <view class="rec-list-item">
+        <view class="goods-img">
+          <image class="" src="/static/images/nvsheng.jpg" lazy-load="{{true}}"></image>
+        </view>
+        <view class="goods-name">
+          <text>商品名称</text>
+        </view>
+      </view>
+      <view class="rec-list-item">
+        <view class="goods-img">
+          <image class="" src="/static/images/nvsheng.jpg" lazy-load="{{true}}"></image>
+        </view>
+        <view class="goods-name">
+          <text>商品名称</text>
+        </view>
+      </view>
+      <view class="rec-list-item">
+        <view class="goods-img">
+          <image class="" src="/static/images/nvsheng.jpg" lazy-load="{{true}}"></image>
+        </view>
+        <view class="goods-name">
+          <text>商品名称</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 电话按钮 -->
+  <view class="call-phone" bind:tap="call">
+    <van-icon name="phone" />
+  </view>
+  </view>
